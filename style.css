@@ -1,0 +1,18 @@
+@font-face{
+	font-family: Determination-Sans;
+	src:url(det-sans.ttf);
+}
+
+html{
+    font-family: Determination-Sans;
+    color: white;
+    font-size: 25px;
+    background-color: black;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+h1{
+    text-align: center;
+}
