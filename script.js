@@ -1,13 +1,14 @@
 
 // Declaracion de variables de audio
-var audio_confirm = new Audio("sound/snd_select.wav");
-var audio_select = new Audio("sound/snd_movemenu.wav");
-var audio_music = new Audio("sound/mus_menu2.ogg");
+var audio_confirm = new Audio("sound/snd_select.mp3");
+var audio_select = new Audio("sound/snd_movemenu.mp3");
+var audio_music = new Audio("sound/mus_menu.mp3");
 audio_music.play();
 var audio_music_is_playing = true;
 var music_volume = 0.2; //default = 0.5
 
 audio_music.volume = music_volume;
+audio_select.volume = 0.8;
 audio_music.loop = true;
 
 // Funciones para cambiar el boton de descarga
