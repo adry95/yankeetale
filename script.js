@@ -2,9 +2,9 @@
 // Declaracion de variables de audio
 var audio_confirm = new Audio("sound/snd_select.wav");
 var audio_select = new Audio("sound/snd_movemenu.wav");
-var audio_music = new Audio("sound/donde_estan.ogg");
+var audio_music = new Audio("sound/mus_menu.ogg");
 audio_music.play();
-var audio_music_is_playing = true;
+var audio_music_is_playing = false;
 
 audio_music.volume = 0; //default = 0.2
 audio_music.loop = true;
@@ -52,17 +52,17 @@ function offHover() {
 if (fecha == "31-10") { // Si es Hallowenn
     speach = "Feliz Halloween mi gente. <br> Soy Daddy Yankee";
 } else if (fecha == "25-12" || fecha == "24-12") { // Si es Navidad o Nochebuena
-    speach = "Feliz Navidad. <br> Y Feliz Año Nuevo. <br> ¿Qué? ¿qué? ¡Toma mango!";
+    speach = "Feliz Navidad.<br>Y Feliz Año Nuevo.<br>¿Qué? ¿qué? ¡Toma mango!";
 } else if (fecha == "3-2") { // Si es su cumpleaños
-    speach = "Feliz cumpleaños a mí, Daddy Panties. ¡El legendario! ¡" + edad + " años! ¡Me duele la cadera!";
+    speach = "Feliz cumpleaños a mí, Daddy Pantis. ¡El legendario! ¡" + edad + " años! ¡Me duele la cadera!";
 } else { // Elegir aleatoriamente una frase del array para mostrar
     var speach_array = []; // Declaracion de los textos a elegir
     speach_array[0] = "¡DY! Quien no se ha escondido, tiempo a tenido.";
-    speach_array[1] = "¿Dónde están las gatas?";
+    speach_array[1] = "¿Dónde estarán esas gatas...?";
     speach_array[2] = "MA- MA- MASIVO!<br>MA- MA- MASIVO!<br>MA- MA- MASIVO!";
     speach_array[3] = "¡¡RUMBA!!<br> ¿Quién dejó la ropa sin planchar?";
     speach_array[4] = "¡Que levante la mano todo el mundo que se puso deshodorante!";
-    speach_array[5] = "Hoy yo salgo pa' la calle sin rumbo, sin GPS. ¡Me quedé sin batería! ¿Quién cargador de iPhone?";
+    speach_array[5] = "Hoy yo salgo pa' la calle sin rumbo, sin GPS. ¡Me quedé sin batería!";
     speach_array[6] = "El patio de mi casa es particular.<br>Llueve y no se moja, como los demás.";
     speach_array[7] = "¡Cada segundo, cada minuto que pase sin descargar el juego es tiempo perdido!";
     speach_array[8] = "¡Legendaddy! ¡Di di diwá!<br>¿Quién coño es Gabi music?";
@@ -76,10 +76,11 @@ if (fecha == "31-10") { // Si es Hallowenn
     speach_array[16] = "Recuerda:<br>Tú eres hielo.<br>Y yo soy fuego.";
     speach_array[17] = "¡La temperatura sube!<br>¡Que la ULL compre ventiladores!";
     speach_array[18] = "¡Muerte por love and rumba!";
-    speach_array[19] = "El talento de barrio.<br>Psicólogo. Psicólogo.<br>Psiqui-daddy yankee yo.";
+    speach_array[19] = "El talento de mi barrio.<br>Musicólogo. Musicólogo.<br>Siqui-daddy yankee yo.";
     speach_array[20] = "¡The Big Boss! ¡DY!<br>¿Quién ha dejado la mierda en el baño? ¡Huele que apesta!";
     speach_array[21] = "¡Mr. Generaciones! ¡Yo me caí y luego me levanté! ¡Me duelen las rodillas!";
     speach_array[22] = "¡La cabra! ¡Díselo, ma'!<br>¡Castigado sin Play!";
+    speach_array[22] = "¡Llamen a Oppenheimer!<br>¡Soltaron una bomba en el baño!";
     //speach_array[] = "";
     speach = speach_array[Math.floor(Math.random() * speach_array.length)]; // Elegir random un index de array
     //speach = speach_array[speach_array.length-1];
