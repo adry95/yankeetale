@@ -5,7 +5,7 @@ var audio_select = new Audio("sound/snd_movemenu.wav");
 var audio_music = new Audio("sound/mus_menu2.ogg");
 audio_music.play();
 var audio_music_is_playing = true;
-var music_volume = 0.5; //default = 0.5
+var music_volume = 0.2; //default = 0.5
 
 audio_music.volume = music_volume;
 audio_music.loop = true;
