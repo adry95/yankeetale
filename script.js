@@ -2,11 +2,12 @@
 // Declaracion de variables de audio
 var audio_confirm = new Audio("sound/snd_select.wav");
 var audio_select = new Audio("sound/snd_movemenu.wav");
-var audio_music = new Audio("sound/mus_menu.ogg");
+var audio_music = new Audio("sound/mus_menu2.ogg");
 audio_music.play();
-var audio_music_is_playing = false;
+var audio_music_is_playing = true;
+var music_volume = 0.5;
 
-audio_music.volume = 0; //default = 0.2
+audio_music.volume = music_volume;
 audio_music.loop = true;
 
 // Funciones para cambiar el boton de descarga
@@ -35,7 +36,7 @@ function offHover() {
         .attr('src','icon/audio_mute.png');
         audio_music_is_playing = false;
     } else {
-        audio_music.volume = 0.2;
+        audio_music.volume = music_volume;
         $("#music_icon")
         .attr('src','icon/audio_play.png');
         audio_music_is_playing = true;
@@ -50,7 +51,7 @@ function offHover() {
 
   // If statement para mostrar el texto de DY
 if (fecha == "31-10") { // Si es Hallowenn
-    speach = "Feliz Halloween mi gente. <br> Soy Daddy Yankee";
+    speach = "Feliz Halloween grupo. <br> Soy Daddy Yankee";
 } else if (fecha == "25-12" || fecha == "24-12") { // Si es Navidad o Nochebuena
     speach = "Feliz Navidad.<br>Y Feliz Año Nuevo.<br>¿Qué? ¿qué? ¡Toma mango!";
 } else if (fecha == "3-2") { // Si es su cumpleaños
@@ -68,7 +69,7 @@ if (fecha == "31-10") { // Si es Hallowenn
     speach_array[8] = "¡Legendaddy! ¡Di di diwá!<br>¿Quién coño es Gabi music?";
     speach_array[9] = "¡Llamen al 911!<br>¡La abuela se cayó por las escaleras!";
     speach_array[10] = "Escribir diálogos es duro, mis reyes. ¡Me duele el culo! ¡30 cm de regla!";
-    speach_array[11] = "¡Dale, dale don, dale!<br>¡Pa que se muev-!<br>Mierda, esa letra no es mía.";
+    speach_array[11] = "¡Dale, dale don, dale!<br>¡Pa que se muev-! ...<br>Espera, esa letra no es mía.";
     speach_array[12] = "¡El Cangri!<br>¡Se me escapó el tranvía!<br>¡Lo que pasó, pasó!";
     speach_array[13] = "¡No corras para coger el tranvía! ¡Pasa otro dentro de 3 min!";
     speach_array[14] = "¡Da-ddy! ¡Yan-keee!<br>¡Hasta luego mi gente, se me escapa el tranvía!";
