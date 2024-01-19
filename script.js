@@ -5,7 +5,7 @@ var audio_select = new Audio("sound/snd_movemenu.mp3");
 var audio_music = new Audio("sound/mus_menu.mp3");
 audio_music.play();
 var audio_music_is_playing = true;
-var music_volume = 0.2; //default = 0.5
+var music_volume = 0.0; //default = 0.5
 
 audio_music.volume = music_volume;
 audio_select.volume = 0.8;
@@ -165,6 +165,36 @@ function speech(){
 /* Codigo del reproductor de canciones OST */
 /*-----------------------------------------*/
 
+const audio_death_by_lovumba = new Audio('music/death_by_lovumba.mp3')
+death_by_lovumba_playing = false;
+
+function playSong() {
+    if (!death_by_lovumba_playing) {
+        $("#play_button")
+        .attr('src','icon/pause.png');
+        audio_death_by_lovumba.play();
+        death_by_lovumba_playing = true;
+    } else {
+        $("#play_button")
+        .attr('src','icon/play.png');
+        audio_death_by_lovumba.pause();
+        death_by_lovumba_playing = false;
+    }
+  }
+function death_by_lovumba_duration() {
+    document.getElementById('death_by_lovumba').innerHTML = Math.floor(this.currentTime) + ' / ' + Math.floor(this.duration);
+}
+
+var progress = document.getElementById('song_slider');
+progress.addEventListener("timeupdate", function() {
+    var current_time = progress.currentTime;
+    var song_duration = player.duration;
+    $('.hp_range').stop(true,true).animate({'width':(current_time +.25)/song_duration*100+'%'},250,'linear');
+})
+
+
+/*
+
  const audio = document.getElementsByClassName('song_itself');
  const play_button = document.getElementsByClassName('play_button');
  const progress_bar = document.getElementsByClassName('song_slider');
@@ -205,6 +235,5 @@ song_itself.addEventListener("timeupdate", () => {
     progress_bar.style.width = `${progress}%`;
 
 })
-
-
+*/
 
