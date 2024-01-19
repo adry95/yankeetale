@@ -8,6 +8,7 @@
 	</head>
 	<body>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style_music.css">
         <script src="script.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> <!-- API de JQuery -->
         <header> <!-- Control del volumen de la musica -->
@@ -42,6 +43,23 @@
             </a>
         </div>
 
+<!-- OCULTAR HASTA PUBLICAR EL JUEGO -->
+        <h3><u>- Official Soundtrack -</u></h3>
+        <div id="musicbox">
+            <div class="music_track">
+                <span class="song_title">Muerte por Lovumba</span>
+                <audio class="song_itself" src="music/death_by_lovumba.mp3" preload="metadata"></audio>
+                <div>
+                    <button class="play_button"></button>
+                    <span class="song_current_time">0:00</span>
+                    <input class="song_slider" type="range" min="0" max="100" value="0">
+                    <span class="song_duration">0:00</span>
+                    <input class="volume_slider" type="range" min="0" max="100" step="0.01" value="100">
+                    <button class="song_download_button"></button>
+                </div>
+            </div>
+        </div>
+<!-------------------------------------->
 
         <br><br><br><br><br><br>
     </main>

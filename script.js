@@ -161,3 +161,50 @@ refresh();
 function speech(){
     document.write(speach);
 }
+
+/* Codigo del reproductor de canciones OST */
+/*-----------------------------------------*/
+
+ const audio = document.getElementsByClassName('song_itself');
+ const play_button = document.getElementsByClassName('play_button');
+ const progress_bar = document.getElementsByClassName('song_slider');
+  const current_time = document.getElementsByClassName('song_current_time');
+ const duration = document.getElementsByClassName('song_duration');
+ const volume_control = document.getElementsByClassName('volume_slider');
+
+ let ost_is_playing = false;
+
+ play_button.addEventListener("click", () => {
+    if (ost_is_playing) {
+        song_itself.pause();
+        play_button.textContent = "Reproducir";
+    } else {
+        song_itself.play();
+        play_button.textContent = "Pausar";
+    }
+    ost_is_playing = !ost_is_playing;
+ });
+
+ volume_control.addEventListener("input", () => {
+    song_itself.volume = volume_control.value;
+ });
+
+song_itself.addEventListener("timeupdate", () => {
+    const current_time = song_itself.current_time;
+    const duration = song_itself.duration;
+    
+    const current_minutes = Math.floor(current_time / 60);
+    const current_seconds = Math.floor(current_time % 60);
+    const total_minutes = Math.floor(duration / 60);
+    const total_seconds = Math.floor(duration % 60);
+
+    currentTimeDisplay.textContent = `${current_minutes}:${current_seconds < 10 ? '0' : ''}${current_seconds}`;
+    totalTimeDisplay.textContent = `${total_minutes}:${total_seconds < 10 ? '0' : ''}${total_seconds}`;
+
+    const progress = (current_time / duration) * 100;
+    progress_bar.style.width = `${progress}%`;
+
+})
+
+
+
