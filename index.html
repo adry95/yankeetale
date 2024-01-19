@@ -42,26 +42,83 @@
                 <img src="icon/donwload.png" alt="Download button" height="80px" id="download_button" onmouseover="onHover();" onmouseout="offHover();" onmouseup="clickImage();"/> 
             </a>
         </div>
+    <br><br>
 
-<!-- OCULTAR HASTA PUBLICAR EL JUEGO -->
+<!-- OFFICIAL SOUNDTRACK -->
         <h3><u>- Official Soundtrack -</u></h3>
         <div id="musicbox">
-            <div id="music_track">
-                <span id="song_title">Muerte por Lovumba</span>
-                <audio id="death_by_lovumba" src="music/death_by_lovumba.mp3" preload="metadata" ontimeupdate="death_by_lovumba_duration();"></audio>
-                <div>
-                    <img id="play_button" src="icon/play.png" onmouseup="playSong();">
-                    <span id="song_current_time">0:00</span>
-                    <input id="song_slider" type="range" min="0" max="100" value="0">
-                    <span id="song_duration">0:00</span>
-                    <input id="volume_slider" type="range" min="0" max="100" step="0.01" value="100">
-                    <img id="song_download_button" src="icon/download_song.png" onmouseup="playSong();">
+            <div id="song_folder">
+                
+                <div id="music_track">
+                    <span id="song_title">La Leyenda</span>
+                    <audio id="song_audio" src="music/leyenda.mp3" controls></audio>
+                    <a href="music/leyenda.mp3" download="La Leyenda">
+                        <img id="song_download_button" src="icon/download_song.png">
+                    </a>
                 </div>
+                
+                <div id="music_track">
+                    <span id="song_title">Menu</span>
+                    <audio id="song_audio" src="music/menu.mp3" controls></audio>
+                    <a href="music/menu.mp3" download="Menu">
+                        <img id="song_download_button" src="icon/download_song.png">
+                    </a>
+                </div>
+                
+                <div id="music_track">
+                    <span id="song_title">Muerte por Lovumba</span>
+                    <audio id="song_audio" src="music/death_by_lovumba.mp3" controls></audio>
+                    <a href="music/death_by_lovumba.mp3" download="Muerte Por Lovumba">
+                        <img id="song_download_button" src="icon/download_song.png">
+                    </a>
+                </div>
+                
+                <div id="music_track">
+                    <span id="song_title">Ven y Sana Mi Dolor</span>
+                    <audio id="song_audio" src="music/dolor.mp3" controls></audio>
+                    <a href="music/dolor.mp3" download="Ven Y Sana Mi Dolor">
+                        <img id="song_download_button" src="icon/download_song.png">
+                    </a>
+                </div>
+                
+                <div id="music_track">
+                    <span id="song_title">Olvidos y Recuerdos</span>
+                    <audio id="song_audio" src="music/despedida.mp3" controls></audio>
+                    <a href="music/despedida.mp3" download="Olvidos y Recuerdos">
+                        <img id="song_download_button" src="icon/download_song.png">
+                    </a>
+                </div>
+                
+                <div id="music_track">
+                    <span id="song_title">No Hables y Tira Pa' Alante</span>
+                    <audio id="song_audio" src="music/traicion.mp3" controls></audio>
+                    <a href="music/traicion.mp3" download="No Hables y Tira Pa' Alante">
+                        <img id="song_download_button" src="icon/download_song.png">
+                    </a>
+                </div>
+
+                <div id="music_track">
+                    <span id="song_title">GÁRGOLA</span>
+                    <audio id="song_audio" src="music/gargola.mp3" controls></audio>
+                    <a href="music/gargola.mp3" download="GÁRGOLA">
+                        <img id="song_download_button" src="icon/download_song.png">
+                    </a>
+                </div>
+
+                <div id="music_track">
+                    <span id="song_title">El Pasado Atrás</span>
+                    <audio id="song_audio" src="music/pasado_atras.mp3" controls></audio>
+                    <a href="music/pasado_atras.mp3" download="El Pasado Atrás">
+                        <img id="song_download_button" src="icon/download_song.png">
+                    </a>
+                </div>
+
             </div>
         </div>
+
 <!-------------------------------------->
 
-        <br><br><br><br><br><br>
+        <br><br><br>
     </main>
     </body>
     <footer>

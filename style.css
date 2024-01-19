@@ -94,21 +94,6 @@ img{
     text-align: center;
 }
 
-#musicbox{
-    border: 10px solid white;
-    background: black;
-    height: 800px;
-    width: 900px;
-    display:flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    margin-right: auto;
-    margin-left:auto;
-    margin-top: 0px;
-    position: relative;
-
-}
-
 footer{
     text-align: center;
     font-size: 0.8em;

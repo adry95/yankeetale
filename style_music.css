@@ -1,46 +1,44 @@
 #musicbox{
     position: relative;
-    background-color: black;
+    border: 10px solid white;
+    background: black;
+    height: 800px;
+    width: 700px;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-left:0%;
+    margin-top: 0px;
+
 }
-#music_track{
+
+#song_folder{
     display: absolute;
     float: left;
-    background-color:aqua;
-    margin: 0px;
     width: 100%;
-    height: 50px;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 10px;
 }
 
 #song_title{
     position:relative;
-    float:left;
-    margin-left: 10px;
+    display: flex;
+    margin-left: 25px;
     margin-right: 10px;
 }
 
-#play_button{
-    width: 20px;
-    height: 30px;
-    cursor: pointer;
-    float: left;
-    margin-right: 10px;
-    margin-top: 5px;
+#song_audio{
+    position: relative;
+    width: 85%;
+    margin-left: 10px;
 }
+
 #song_download_button{
     position: absolute;
-    width: 20px;
+    width: 30px;
     height: 30px;
     cursor: pointer;
-    /*float: right;*/
+    float: right;
     margin-left: 10px;
-    margin-top: 5px;
-}
-#song_slider{
-    position: relative;
-    display: inline;
-    width: 200px;
-    margin-top: 10px;
-}
-#volume_slider{
-    width: 50px
 }
