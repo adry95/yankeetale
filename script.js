@@ -81,7 +81,9 @@ speach_array[22] = "¡La cabra! ¡Díselo, ma'!<br>¡Castigado sin Play!";
 speach_array[23] = "¡Llamen a Oppenheimer!<br>¡Soltaron una bomba en el baño!";
 speach_array[24] = "Yankeeconsejo del día:<br>¡Cada una de arroz, son dos de agua!";
 speach_array[25] = "¡Kevin cruzó y le atropelló<br>un Twingo!<br>¡Ajo y agua!";
-//speach_array[] = "";  <-- esto nada mas es pa hacer copy-paste si me hace falta añadir más frases
+speach_array[26] = "quien te va a curar<br>el corazon partio?";
+//speach_array[] = "";
+// ^ esto nada más es pa hacer copy-paste si me hace falta añadir más frases
 
 
 
