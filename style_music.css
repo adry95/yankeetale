@@ -10,18 +10,21 @@ iframe{
     width: 100%;
     display:flex;
     flex-wrap: nowrap;
+    flex-direction: column;
     justify-content: space-evenly;
     margin-left:0%;
     margin-top: 0px;
+    text-align: center;
 
 }
 
 #song_folder{
-    display: absolute;
+    display:none;
     float: left;
     width: 100%;
     position: relative;
-    margin-top: 50px;
+    margin-top: 0px;
+    margin-bottom: 50px;
     margin-left: 10px;
 }
 
@@ -35,7 +38,7 @@ iframe{
 #song_audio{
     position: relative;
     width: 85%;
-    margin-left: 10px;
+    margin-left: -50px;
 }
 
 #song_download_button{

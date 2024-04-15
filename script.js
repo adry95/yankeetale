@@ -33,6 +33,17 @@ function offHover() {
         clicked_download = true;
   }
 
+  // Funcion para mostrar la lista de musica
+  function showMusic() {
+    var show = document.getElementById("song_folder");
+    if (show.style.display == "block") {
+        show.style.display = "none";
+    }
+    else {
+        show.style.display = "block";
+    }
+  }
+
   // Funciones para controlar la musica de fondo
   function playMusic() {
     if (audio_music_is_playing) {
