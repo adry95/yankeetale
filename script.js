@@ -86,6 +86,7 @@ speach_array[23] = "¡Llamen a Oppenheimer!<br>¡Soltaron una bomba en el baño!
 speach_array[24] = "Yankeeconsejo del día:<br>¡Cada una de arroz, son dos de agua!";
 speach_array[25] = "¡Robinson Crusoe y le atropelló<br>un Twingo!<br>¡Ajo y agua!";
 speach_array[26] = "quien te va a curar<br>el corazon partio?";
+speach_array[27] = "Mi moto no hace brrrr.<br>Mi moto hace...<br>BRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR";
 //speach_array[] = "";
 // ^ esto nada más es pa hacer copy-paste si me hace falta añadir más frases
 
@@ -161,7 +162,7 @@ function refresh() {
 }
 
 refresh();
-//speach = speach_array[26];
+//speach = speach_array[27];
 function speech(){
     document.write(speach);
 }
