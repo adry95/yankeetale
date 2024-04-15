@@ -1,9 +1,13 @@
+iframe{
+    padding: 40px;
+}
+
 #musicbox{
     position: relative;
     border: 10px solid white;
     background: black;
-    height: 800px;
-    width: 700px;
+    /*height: 800px;*/
+    width: 100%;
     display:flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;

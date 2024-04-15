@@ -6,6 +6,7 @@ var audio_music = new Audio("sound/mus_menu.mp3");
 audio_music.play();
 var audio_music_is_playing = true;
 var music_volume = 0.0; //default = 0.5
+var clicked_download = false;
 
 audio_music.volume = music_volume;
 audio_select.volume = 0.8;
@@ -19,14 +20,17 @@ function onHover() {
   }
   
 function offHover() {
+    if (!clicked_download) {
     $("#download_button")
         .attr('src', "icon/donwload.png");
+    }
   }
 
   function clickImage() {
     $("#download_button")
-        .attr('src', "icon/donwload.png");
+        .attr('src', "icon/donwload_selected.png");
         audio_confirm.play();
+        clicked_download = true;
   }
 
   // Funciones para controlar la musica de fondo
@@ -80,7 +84,7 @@ speach_array[21] = "¡Mr. Generaciones!<br>¡Yo me caí y luego me levanté!<br>
 speach_array[22] = "¡La cabra! ¡Díselo, ma'!<br>¡Castigado sin Play!";
 speach_array[23] = "¡Llamen a Oppenheimer!<br>¡Soltaron una bomba en el baño!";
 speach_array[24] = "Yankeeconsejo del día:<br>¡Cada una de arroz, son dos de agua!";
-speach_array[25] = "¡Kevin cruzó y le atropelló<br>un Twingo!<br>¡Ajo y agua!";
+speach_array[25] = "¡Robinson Crusoe y le atropelló<br>un Twingo!<br>¡Ajo y agua!";
 speach_array[26] = "quien te va a curar<br>el corazon partio?";
 //speach_array[] = "";
 // ^ esto nada más es pa hacer copy-paste si me hace falta añadir más frases
@@ -141,7 +145,6 @@ function refresh() {
     else if (last_speech.fecha_ultima < midnight) { // Frases aleatorias
         last_speech = {
             frase: speach_array[Math.floor(Math.random() * speach_array.length)],
-            //frase: speach_array[23],
             fecha_ultima: midnight
         };
     }
