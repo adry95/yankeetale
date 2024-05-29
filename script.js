@@ -105,7 +105,7 @@ speach_array[27] = "Mi moto no hace brrrr.<br>Mi moto hace...<br>BRRRRRRRRRRRRRR
 
 /////////// TESTEO ////////////
 //localStorage.removeItem('last_speech'); // Para limpiar la localStorage
-//fecha = "23-5";
+//fecha = "11-9";
 ///////////////////////////////
 
 
@@ -151,6 +151,12 @@ function refresh() {
     else if (fecha == "23-5") { // Si es mi cumple
         last_speech = {
             frase: "¡El marico que hizo esto cumple años! ¡Ya te queda menos pa' probar ataúd! ¡Súbele mambo!",
+            fecha_ultima: midnight
+        };
+    }
+    else if (fecha == "11-9") { // Si es el 11-S
+        last_speech = {
+            frase: "¡No puede ser!<br>¡NOOOOOOOOOOOOOOOOOOOOOOOOOOOO!<br>¡Delfín hasta el fin!",
             fecha_ultima: midnight
         };
     }
