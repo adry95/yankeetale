@@ -2,7 +2,6 @@
 // Declaracion de variables de audio
 var audio_confirm = new Audio("sound/snd_select.mp3");
 var audio_select = new Audio("sound/snd_movemenu.mp3");
-var audio_music = new Audio("sound/mus_menu.mp3");
 
 // Funciones para cambiar el boton de descarga
 function onHover() {
