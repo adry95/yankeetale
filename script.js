@@ -2,6 +2,8 @@
 // Declaracion de variables de audio
 var audio_confirm = new Audio("sound/snd_select.mp3");
 var audio_select = new Audio("sound/snd_movemenu.mp3");
+var audio_music = new Audio("sound/mus_menu.mp3");
+var clicked_download = false;
 
 // Funciones para cambiar el boton de descarga
 function onHover() {
@@ -21,6 +23,7 @@ function offHover() {
     $("#download_button")
         .attr('src', "icon/donwload_selected.png");
         audio_confirm.play();
+        clicked_download = true;
   }
 
   // Funcion para mostrar la lista de musica
