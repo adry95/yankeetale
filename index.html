@@ -12,9 +12,6 @@
         <script src="script.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> <!-- API de JQuery -->
         <header>
-            <!-- Control del volumen de la musica -->
-            <!--<img id="music_icon" src="icon/audio_play.png" alt="Control de musica" height="80px" onmouseup="playMusic();">-->
-
             <img id="title_image" src="icon/title.png" height="70px">
             <h1>Una Batalla Fangame de UNDERTALE</h1>
         </header>
@@ -23,7 +20,7 @@
 
     <main>
         <h3><u>- Sinopsis -</u></h3>
-        <p style="text-align: justify;">YANKEETALE es un pequeño proyecto basado en el popular videojuego UNDERTALE que imita su sistema de combate. Te enfrentarás en una batalla contra Daddy Yankee donde podrás decidir el resultado de la batalla. <font color=red>Lucha</font> hasta la muerte o negocia para <font color=yellow>perdonarle</font> la vida.</p>
+        <p style="text-align: justify;">YANKEETALE es un pequeño proyecto basado en el popular videojuego UNDERTALE que imita su sistema de combate. Te enfrentarás en una batalla contra Daddy Yankee donde podrás decidir el resultado. <font color=red>Lucha</font> hasta la muerte o rétale a un duelo de baile para <font color=yellow>perdonarle</font> la vida.</p>
         <br><br>
                
         <div id="textbox">
@@ -36,15 +33,32 @@
                     
             </div>
         </div>
-        <br><br><br>
+    <br><br>
+
+        <h3><u>- Changelog -</u></h3>
+        <p>-- Versión 1.0.1</p>
+        <ul>
+            <li>Nueva canción para el final Neutral</li>
+            <li>Nuevos diálogos</li>
+            <li>Ahora el juego se inicia en pantalla completa</li>
+            <li>Re-renderizadas algunas canciones</li>
+            <li>Ajustada la dificultad de algunos ataques</li>
+            <li>Ajustada la curación de los ítems</li>
+            <li>Ajustados algunos diálogos</li>
+            <li>Y más...</li>
+        </ul>
+
+    <br><br>
+
         <h3><u>- Descarga -</u></h3>
         <p style="text-align: justify;">Abajo tienes el botón para descargar el juego. Es tan fácil como descomprimir el archivo .ZIP y abrir el ejecutable "YANKEETALE". <br><br> <font color=yellow>¡IMPORTANTE!</font> No borres ni muevas el contenido de la carpeta. Puedes crear un acceso directo del .EXE si quieres tenerlo más accesible, como en el escritorio. <br> <font color="grey">(Click derecho sobre el .EXE > Enviar a > Escritorio)</font></p>
         <div class="descarga">
-            <a href="game/YANKEETALE v1.0.1.zip" target="_self" title="Descargar YANKEETALE" rel="noreferrer">
+            <a href="game/YANKEETALE 101.zip" target="_self" title="Descargar YANKEETALE" rel="noreferrer" download="YANKEETALE v1.0.1">
                 <img src="icon/donwload.png" alt="Download button" height="80px" id="download_button" onmouseover="onHover();" onmouseout="offHover();" onmouseup="clickImage();"/> 
             </a>
         </div>
-    <br><br>
+    
+    <br><br><br>
 
 <!-- OFFICIAL SOUNDTRACK -->
         <h3><u>- Official Soundtrack -</u></h3>
@@ -126,6 +140,14 @@
                     <span id="song_title">Ven y Sana Mi Dolor (Versión Cumbia) (Extendida)</span>
                     <audio id="song_audio" src="music/dolor_cumbia_ext.mp3" controls></audio>
                     <a href="music/dolor_cumbia_ext.mp3" download="Ven y Sana Mi Dolor (Versión Cumbia) (Extendida)">
+                        <img id="song_download_button" src="icon/download_song.png">
+                    </a>
+                </div>
+
+                <div id="music_track">
+                    <span id="song_title">EL CAMINO DEL PLACER</span>
+                    <audio id="song_audio" src="music/el_camino.mp3" controls></audio>
+                    <a href="music/el_camino.mp3" download="EL CAMINO DEL PLACER">
                         <img id="song_download_button" src="icon/download_song.png">
                     </a>
                 </div>
