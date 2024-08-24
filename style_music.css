@@ -19,7 +19,7 @@ iframe{
 }
 
 #song_folder{
-    display:none;
+    display: block;
     float: left;
     width: 100%;
     position: relative;
