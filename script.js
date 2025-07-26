@@ -22,13 +22,13 @@ function offHover() {
   }
 
   // Funcion para mostrar la lista de musica
-  function showMusic() {
-    var show = document.getElementById("song_folder");
-    if (show.style.display == "block") {
-        show.style.display = "none";
+  function changelog() {
+    var show = document.getElementById("changelog");
+    if (show.style.display == "none") {
+        show.style.display = "block";
     }
     else {
-        show.style.display = "block";
+        show.style.display = "none";
     }
   }
 
@@ -39,7 +39,7 @@ function offHover() {
   var dia = hoy.getDate();
   var mes = hoy.getMonth()+1;
   var fecha = dia + '-'+ mes;
-  var edad = hoy.getFullYear() - 1977;
+  var edad = hoy.getFullYear() - 1976;
   var midnight = Math.floor(hoy.getTime() / (1000*60*60*24));
 
 // Frases a mostrar
@@ -54,7 +54,7 @@ speach_array[6] = "El patio de mi casa es particular.<br>Llueve y no se moja, co
 speach_array[7] = "¡Cada segundo, cada minuto que pase sin descargar el juego es tiempo perdido!";
 speach_array[8] = "¡Legendaddy! ¡Di di diwá!<br>¿Quién coño es Gabi music?";
 speach_array[9] = "¡Llamen al 911!<br>¡La abuela se cayó por las escaleras!";
-speach_array[10] = "Aquí D.Y. con el Yankkeconsejo<br>del día: \"Si el mojón no baja,<br>¡tira de la cisterna!\"";
+speach_array[10] = "Aquí D.Y. con el Yankkeconsejo<br>del día: \"Si el mojón no baja,<br>¡tira de la cadena!\"";
 speach_array[11] = "¡Dale, dale don, dale!<br>¡Pa que se muev-! ...<br>Espera, esa letra no es mía.";
 speach_array[12] = "¡El Cangri!<br>¡Se me escapó el tranvía!<br>¡Lo que pasó, pasó!";
 speach_array[13] = "Yankeeconsejo del día:<br>¡No corras para coger el tranvía! ¡Pasa otro en 3 minutos!";
@@ -79,7 +79,7 @@ speach_array[27] = "Mi moto no hace brrrr.<br>Mi moto hace...<br>BRRRRRRRRRRRRRR
 
 /////////// TESTEO ////////////
 //localStorage.removeItem('last_speech'); // Para limpiar la localStorage
-//fecha = "11-9";
+//fecha = "3-2";
 ///////////////////////////////
 
 
@@ -93,7 +93,7 @@ function refresh() {
     // Si no existe mensaje anterior
     if (!last_speech) {
         last_speech = {
-            frase: "Daddy Yankee al habla.<br>Bienvenido a la página oficial de Yankeetale. ¡Gózate el juego, rey!",
+            frase: "Daddy Yankee al habla.<br>Bienvenido a la página oficial de YANKEETALE. ¡Gózate el juego, rey!",
             fecha_ultima: midnight
         };
         
@@ -106,13 +106,13 @@ function refresh() {
     }
     else if (fecha == "24-12" || fecha == "25-12") { // Si es Navidad o Nochebuena
         last_speech = {
-            frase: "Joel le dice a Victor<br><br> Feliz Navidad.",
+            frase: "Joel le dice a Victor<br>...<br> Feliz Navidad.",
             fecha_ultima: midnight
         };
     }
     else if (fecha == "31-12" || fecha == "1-1") { // Si es Nochevieja o Año Nuevo
         last_speech = {
-            frase: "Y Victor le dice a Joel<br><br> Feliz Año Nuevo.",
+            frase: "Y Victor le dice a Joel<br>...<br> Feliz Año Nuevo.",
             fecha_ultima: midnight
         };
     }

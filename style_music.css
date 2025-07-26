@@ -7,13 +7,12 @@ iframe{
     border: 10px solid white;
     background: black;
     /*height: 800px;*/
-    width: 100%;
+    width: 70%;
     display:flex;
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-left:0%;
-    margin-top: 0px;
+    margin-left:15%; /* la mitad del (100-width)% */
     text-align: center;
 
 }

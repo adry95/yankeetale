@@ -19,8 +19,13 @@
         <br>
 
     <main>
-        <h3><u>- Sinopsis -</u></h3>
-        <p style="text-align: justify;">YANKEETALE es un pequeño proyecto basado en el popular videojuego UNDERTALE que imita su sistema de combate. Te enfrentarás en una batalla contra Daddy Yankee donde podrás decidir el resultado. <font color=red>Lucha</font> hasta la muerte o rétale a un duelo de baile para <font color=yellow>perdonarle</font> la vida.</p>
+<!-- Sinopsis -->
+        <div class="texto">
+            <h3><u>- Sinopsis -</u></h3>
+            <p>YANKEETALE es un pequeño proyecto basado en el popular videojuego UNDERTALE que imita su sistema de combate.</p>
+            <p>Te enfrentarás en una batalla contra Daddy Yankee donde podrás decidir el resultado. <font color=red>Lucha</font> hasta la muerte o rétale a un duelo de baile para <font color=yellow>perdonarle</font> la vida.</p>
+        </div>
+        
         <br><br>
                
         <div id="textbox">
@@ -35,126 +40,132 @@
         </div>
     <br><br>
 
+
+<!-- Descarga -->
+        <div class="texto">
+            <h3><u>- Descarga -</u></h3>
+            <div class="descarga">
+                <a href="game/YANKEETALE.zip" target="_self" title="Descargar YANKEETALE" rel="noreferrer" download="YANKEETALE v1.0.1.zip">
+                    <img src="icon/donwload.png" alt="Download button" height="120px" id="download_button" onmouseover="onHover();" onmouseout="offHover();" onmouseup="clickImage();"/> 
+                </a>
+                <p id="version">v1.1</p>
+            </div>
+            <p><font color=yellow>¡IMPORTANTE!</font> No borres ni muevas el contenido de la carpeta. Puedes crear un acceso directo del .EXE si quieres tenerlo más accesible, como en el escritorio. <br> <font color="grey">(Click derecho sobre el .EXE > Enviar a > Escritorio)</font></p>
+        </div>
+       
+        
+    
+    <br><br>
+
+<!-- OFFICIAL SOUNDTRACK -->
+        <div class="texto" style="align-items: center;">
+            <h3><u>- Banda Sonora Oficial -</u></h3>
+            <div id="musicbox">
+                <div style="align-items: center;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=l-sGIeloD8z_A4mF&amp;list=PLyROfgDFwRtlGX90coLrOzYHop9xK6LuP" title="YANKEETALE OST" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            <!-- Canciones in-web -->
+                <div id="song_folder">
+                    
+                    <div id="music_track">
+                        <span id="song_title">La Leyenda</span>
+                        <audio id="song_audio" src="music/leyenda.mp3" controls></audio>
+                        <a href="music/leyenda.mp3" download="La Leyenda">
+                            <img id="song_download_button" src="icon/download_song.png">
+                        </a>
+                    </div>
+                    
+                    <div id="music_track">
+                        <span id="song_title">Sin Rumbo</span>
+                        <audio id="song_audio" src="music/sin_rumbo.mp3" controls></audio>
+                        <a href="music/sin_rumbo.mp3" download="Vagabundo Sin Rumbo">
+                            <img id="song_download_button" src="icon/download_song.png">
+                        </a>
+                    </div>
+                    
+                    <div id="music_track">
+                        <span id="song_title">Death by Lovumba</span>
+                        <audio id="song_audio" src="music/death_lovumba.mp3" controls></audio>
+                        <a href="music/death_lovumba.mp3" download="Muerte Por Lovumba">
+                            <img id="song_download_button" src="icon/download_song.png">
+                        </a>
+                    </div>
+                    
+                    <div id="music_track">
+                        <span id="song_title">Ven y Sana Mi Dolor</span>
+                        <audio id="song_audio" src="music/dolor.mp3" controls></audio>
+                        <a href="music/dolor.mp3" download="Ven Y Sana Mi Dolor">
+                            <img id="song_download_button" src="icon/download_song.png">
+                        </a>
+                    </div>
+                    
+                    <div id="music_track">
+                        <span id="song_title">Olvidos y Recuerdos</span>
+                        <audio id="song_audio" src="music/despedida.mp3" controls></audio>
+                        <a href="music/despedida.mp3" download="Olvidos y Recuerdos">
+                            <img id="song_download_button" src="icon/download_song.png">
+                        </a>
+                    </div>
+
+                    <div id="music_track">
+                        <span id="song_title">EL CAMINO DEL PLACER</span>
+                        <audio id="song_audio" src="music/camino.mp3" controls></audio>
+                        <a href="music/camino.mp3" download="EL CAMINO DEL PLACER">
+                            <img id="song_download_button" src="icon/download_song.png">
+                        </a>
+                    </div>
+
+                    <div id="music_track">
+                        <span id="song_title">GÁRGOLA</span>
+                        <audio id="song_audio" src="music/gargola.mp3" controls></audio>
+                        <a href="music/gargola.mp3" download="GÁRGOLA">
+                            <img id="song_download_button" src="icon/download_song.png">
+                        </a>
+                    </div>
+
+                    <div id="music_track">
+                        <span id="song_title">El Pasado Atrás</span>
+                        <audio id="song_audio" src="music/pasado.mp3" controls></audio>
+                        <a href="music/pasado.mp3" download="El Pasado Atrás">
+                            <img id="song_download_button" src="icon/download_song.png">
+                        </a>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    
+    <br><br>
+
+        <!-- Changelog-->
+    <div class="texto">
+        <!--<h3 onclick=changelog() style="cursor: pointer"><u>- Changelog -</u></h3>-->
         <h3><u>- Changelog -</u></h3>
-        <p>-- Tiempo de desarrollo: 4 meses</p>
-        <p>-- Versión 1.0.1</p>
-        <ul>
-            <li>Nueva canción para el final Neutral</li>
-            <li>Nuevos diálogos</li>
-            <li>Ahora el juego se inicia en pantalla completa</li>
-            <li>Re-renderizadas algunas canciones</li>
-            <li>Ajustada la dificultad de algunos ataques</li>
-            <li>Ajustada la curación de los ítems</li>
-            <li>Ajustados algunos diálogos</li>
-            <li>Y más...</li>
-        </ul>
+        <div id="changelog">
+            <p>■ Tiempo de desarrollo: 4 meses</p>
+            
+            <ul>
+                <u>v1.1</u>
+                <li>Nueva canción para el final Neutral</li>
+                <li>Nuevos diálogos</li>
+                <li>Ahora el juego se inicia en pantalla completa</li>
+                <li>Re-renderizadas algunas canciones</li>
+                <li>Ajustada la dificultad de algunos ataques</li>
+                <li>Ajustada la curación de los ítems</li>
+                <li>Ajustados algunos diálogos</li>
+                <li>...</li>
+            </ul>
+        </div>
+    </div>
 
     <br><br>
 
-        <h3><u>- Descarga -</u></h3>
-        <p style="text-align: justify;">Abajo tienes el botón para descargar el juego. Es tan fácil como descomprimir el archivo .ZIP y abrir el ejecutable "YANKEETALE". <br><br> <font color=yellow>¡IMPORTANTE!</font> No borres ni muevas el contenido de la carpeta. Puedes crear un acceso directo del .EXE si quieres tenerlo más accesible, como en el escritorio. <br> <font color="grey">(Click derecho sobre el .EXE > Enviar a > Escritorio)</font></p>
-        <div class="descarga">
-            <a href="game/YANKEETALE.zip" target="_self" title="Descargar YANKEETALE" rel="noreferrer" download="YANKEETALE v1.0.1.zip">
-                <img src="icon/donwload.png" alt="Download button" height="80px" id="download_button" onmouseover="onHover();" onmouseout="offHover();" onmouseup="clickImage();"/> 
-            </a>
-        </div>
-    
-    <br><br><br>
-
-<!-- OFFICIAL SOUNDTRACK -->
-        <h3><u>- Official Soundtrack -</u></h3>
-        <div id="musicbox">
-            <div style="align-items: center;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=l-sGIeloD8z_A4mF&amp;list=PLyROfgDFwRtlGX90coLrOzYHop9xK6LuP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div onclick="showMusic()">
-                <h3 style="cursor: pointer;" title="Clic para mostrar la lista de canciones"><u>> Álbum Web <</u></h3>
-            </div>
-        
-            <div id="song_folder">
-                
-                <div id="music_track">
-                    <span id="song_title">La Leyenda</span>
-                    <audio id="song_audio" src="music/re_leyenda_v4_vocals.mp3" controls></audio>
-                    <a href="music/re_leyenda_v4_vocals.mp3" download="La Leyenda">
-                        <img id="song_download_button" src="icon/download_song.png">
-                    </a>
-                </div>
-                
-                <div id="music_track">
-                    <span id="song_title">Vagabundo Sin Rumbo</span>
-                    <audio id="song_audio" src="music/re_menu_v2_vocals.mp3" controls></audio>
-                    <a href="music/re_menu_v2_vocals.mp3" download="Vagabundo Sin Rumbo">
-                        <img id="song_download_button" src="icon/download_song.png">
-                    </a>
-                </div>
-                
-                <div id="music_track">
-                    <span id="song_title">Muerte por Lovumba</span>
-                    <audio id="song_audio" src="music/re_lovumba_v3_vocals.mp3" controls></audio>
-                    <a href="music/re_lovumba_v3_vocals.mp3" download="Muerte Por Lovumba">
-                        <img id="song_download_button" src="icon/download_song.png">
-                    </a>
-                </div>
-                
-                <div id="music_track">
-                    <span id="song_title">Ven y Sana Mi Dolor</span>
-                    <audio id="song_audio" src="music/re_determination_v1_vocals.mp3" controls></audio>
-                    <a href="music/re_determination_v1_vocals.mp3" download="Ven Y Sana Mi Dolor">
-                        <img id="song_download_button" src="icon/download_song.png">
-                    </a>
-                </div>
-                
-                <div id="music_track">
-                    <span id="song_title">Olvidos y Recuerdos</span>
-                    <audio id="song_audio" src="music/re_despedida_v5_vocals.mp3" controls></audio>
-                    <a href="music/re_despedida_v5_vocals.mp3" download="Olvidos y Recuerdos">
-                        <img id="song_download_button" src="icon/download_song.png">
-                    </a>
-                </div>
-                
-                <div id="music_track">
-                    <span id="song_title">No Hables y Tira Pa' Alante</span>
-                    <audio id="song_audio" src="music/re_pre_gargola_v1.mp3" controls></audio>
-                    <a href="music/re_pre_gargola_v1.mp3" download="No Hables y Tira Pa' Alante">
-                        <img id="song_download_button" src="icon/download_song.png">
-                    </a>
-                </div>
-
-                <div id="music_track">
-                    <span id="song_title">GÁRGOLA</span>
-                    <audio id="song_audio" src="music/re_gargola_v3_vocals.mp3" controls></audio>
-                    <a href="music/re_gargola_v3_vocals.mp3" download="GÁRGOLA">
-                        <img id="song_download_button" src="icon/download_song.png">
-                    </a>
-                </div>
-
-                <div id="music_track">
-                    <span id="song_title">El Pasado Atrás</span>
-                    <audio id="song_audio" src="music/re_pasado_v1_vocals.mp3" controls></audio>
-                    <a href="music/re_pasado_v1_vocals.mp3" download="El Pasado Atrás">
-                        <img id="song_download_button" src="icon/download_song.png">
-                    </a>
-                </div>
-
-                <div id="music_track">
-                    <span id="song_title">EL CAMINO DEL PLACER</span>
-                    <audio id="song_audio" src="music/re_camino_v5_vocals.mp3" controls></audio>
-                    <a href="music/re_camino_v5_vocals.mp3" download="EL CAMINO DEL PLACER">
-                        <img id="song_download_button" src="icon/download_song.png">
-                    </a>
-                </div>
-
-            </div>
-            
-        </div>
-
 <!-------------------------------------->
 
-        <br><br><br>
     </main>
     </body>
     <footer>
-        <p>Hecho por el maricón de La Candelaria</p>
+        <p>adrygofio™</p>
     </footer>
 </html>
